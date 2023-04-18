@@ -1,0 +1,17 @@
+<div class="listWord">
+  <div class="listWord__content">
+    <ng-template ngFor [ngForOf]="listWord" let-word>
+      <div class="listWord__item" (click)="onSelectWord(word)">
+        <div class="listWord__item-type">
+          {{ word.type | slice : 0 : 1 | uppercase }}
+        </div>
+        <div class="listWord__item-name">{{ word.name }}</div>
+      </div>
+    </ng-template>
+  </div>
+  <ng-template #detailModal let-modal>
+    <app-modal-detail title="Thông tin chi tiết" [detailWord]="selectedWord">
+      <!-- Nội dung của Modal -->
+    </app-modal-detail>
+  </ng-template>
+</div>

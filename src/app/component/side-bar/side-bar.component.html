@@ -1,0 +1,11 @@
+<div class="sideBar">
+  <ng-template ngFor [ngForOf]="listItem" let-item>
+    <div
+      class="sideBar__item"
+      [class.active]="activatedId == item.categoryId"
+      (click)="onSelect(item.categoryId)"
+    >
+      {{ item.categoryName }}
+    </div>
+  </ng-template>
+</div>

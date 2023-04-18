@@ -1,0 +1,14 @@
+<div class="home">
+  <div class="home__nav">
+    <app-side-bar [listItem]="categories"></app-side-bar>
+  </div>
+  <div class="home__listWord">
+    <ng-template [ngIf]="listWord.length">
+      <div class="home__listWord-actions">
+        <span> Flashcard </span>
+        <span> Fill </span>
+      </div>
+    </ng-template>
+    <app-list-word [listWord]="listWord"></app-list-word>
+  </div>
+</div>

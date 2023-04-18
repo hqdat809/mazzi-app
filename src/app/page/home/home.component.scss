@@ -1,0 +1,35 @@
+.home {
+  display: flex;
+  padding: 50px 60px;
+  background-color: #30373f;
+  &__nav {
+    flex: 1;
+  }
+  &__listWord {
+    flex: 4;
+    background-color: #0e1420;
+    padding: 25px 16px;
+    border-radius: 15px;
+    color: #fafafd;
+
+    &-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 22px;
+      gap: 24px;
+      span {
+        padding: 8px 16px;
+        border: 1px solid #a9a6a6;
+        border-radius: 10px;
+        background-color: #222836;
+        color: #fafafd;
+
+        &:hover {
+          cursor: pointer;
+          border: 1px solid #d5d5d5;
+          box-shadow: 5px 6px #010a1a;
+        }
+      }
+    }
+  }
+}

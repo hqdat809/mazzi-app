@@ -1,0 +1,31 @@
+.sideBar {
+  height: 100vh;
+  background-color: #0e1420;
+  padding: 25px 16px;
+  border-radius: 15px;
+  margin-right: 5px;
+
+  &__item {
+    color: #b7b9be;
+    padding: 16px 20px;
+    cursor: pointer;
+    margin: 15px 0;
+
+    &:hover {
+      opacity: 0.6;
+      color: #fafafd;
+      border: 1px solid #a9a6a6;
+      border-radius: 10px;
+      background-color: #222836;
+      box-shadow: 5px 6px #010a1a;
+    }
+
+    &.active {
+      border: 1px solid #a9a6a6;
+      border-radius: 10px;
+      background-color: #222836;
+      box-shadow: 5px 6px #010a1a;
+      color: #fafafd;
+    }
+  }
+}
