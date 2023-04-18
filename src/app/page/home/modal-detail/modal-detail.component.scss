@@ -1,0 +1,11 @@
+.detailModal {
+  background-color: #0e1420;
+  color: #fafafd;
+  border-radius: 5px;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

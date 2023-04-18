@@ -10,7 +10,7 @@ import { Store } from '@ngrx/store';
 
 import { TCategory } from 'src/app/models/category.model';
 import { AppState } from 'src/app/store/reducers';
-import * as WordActions from '../../store/actions/word.action';
+import * as WordActions from '../../../store/actions/word.action';
 
 @Component({
   selector: 'app-side-bar',
